@@ -15,13 +15,15 @@ Kontuwikibot on tarkoitettu automaattisten massamuokkausten tekemiseen [Kontuwik
 ## Käyttö
 
 Kirjautuminen:
+
 `python pwb.py login`
 
 Tee tekstimuutokset `nimikirjaimet` kaikille artikkeleille, jotka linkittävät artikkeliin "J.R.R. Tolkien":
+
 `python pwb.py replace -ns:0 -ref:"J.R.R. Tolkien" -fix:nimikirjaimet`
 
 Eräitä `replace`-skriptin parametreja:
-- -file         Work on all pages given in a local text file. Will read any [[wiki link]] and use these articles. Argument can also be given as "-file:filename".
-- -always       Don't prompt you for each replacement.
-- -summary:XYZ  Set the summary message text, bypassing the default edit summaries.
-- -simulate     Disables writing to the server.
+- `-file`         Work on all pages given in a local text file. Will read any [[wiki link]] and use these articles. Argument can also be given as "-file:filename".
+- `-always`       Don't prompt you for each replacement.
+- `-summary:XYZ`  Set the summary message text, bypassing the default edit summaries.
+- `-simulate`     Disables writing to the server.
