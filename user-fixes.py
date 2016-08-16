@@ -15,7 +15,7 @@ fixes['nimikirjaimet'] = {
     ]
 }
 
-fixes['nimikirjaimet-np'] = {
+fixes['nimikirjaimet-nb'] = {
     'regex': True,
     'msg': {
         '_default': u'Muutettu J.R.R. → J. R. R. (sitovilla välilyönneillä)'
