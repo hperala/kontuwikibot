@@ -24,6 +24,7 @@ Tee tekstimuutokset `nimikirjaimet` kaikille artikkeleille, jotka linkittävät 
 
 Eräitä `replace`-skriptin parametreja:
 - `-file`         Work on all pages given in a local text file. Will read any [[wiki link]] and use these articles. Argument can also be given as "-file:filename".
+- `-page`        Only edit a specific page. Argument can also be given as "-page:pagetitle". You can give this parameter multiple times to edit multiple pages.
 - `-always`       Don't prompt you for each replacement.
 - `-summary:XYZ`  Set the summary message text, bypassing the default edit summaries.
 - `-simulate`     Disables writing to the server.

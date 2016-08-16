@@ -40,7 +40,7 @@ mylang = 'fi'
 # The dictionary usernames should contain a username for each site where you
 # have a bot account. If you have a unique username for all languages of a
 # family , you can use '*'
-usernames['kontu']['fi'] = u'Uskollinen kivi'
+usernames['kontu']['fi'] = u'Uskollinen kivi (botti)'
 
 
 # ############# LOGFILE SETTINGS ##############
