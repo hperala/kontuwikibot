@@ -20,7 +20,9 @@ Kirjautuminen:
 
 Tee tekstimuutokset `nimikirjaimet` kaikille artikkeleille, jotka linkittävät artikkeliin "J.R.R. Tolkien":
 
-`python pwb.py replace -ns:0 -ref:"J.R.R. Tolkien" -fix:nimikirjaimet`
+`python pwb.py replace -ns:0 -ref:"J.R.R. Tolkien" -fix:nimikirjaimet -exceptinsidetag:template -exceptinsidetag:interwiki`
+
+Edellisessä esimerkissä muutokset tehdään linkkien ja luokkamääritysten sisällä, mutta ei malline- tai interwikimerkinnöissä.
 
 Eräitä `replace`-skriptin parametreja:
 - `-file`         Work on all pages given in a local text file. Will read any [[wiki link]] and use these articles. Argument can also be given as "-file:filename".

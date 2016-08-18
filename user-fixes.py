@@ -1,8 +1,6 @@
 # -*- coding: utf-8  -*-
 
-# Ei korvaa tekstiä, jos sitä edeltää välittömästi kaksoispiste esimerkiksi 
-# interwikilinkissä
-kw_jrr_regex = ur'(?<!:)J\.R\.R\. Tolkien'
+kw_jrr_regex = ur'J\.R\.R\. Tolkien'
 
 fixes['nimikirjaimet'] = {
     'regex': True,
