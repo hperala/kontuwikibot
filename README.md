@@ -24,6 +24,10 @@ Tee tekstimuutokset `nimikirjaimet` kaikille artikkeleille, jotka linkittävät 
 
 Edellisessä esimerkissä muutokset tehdään linkkien ja luokkamääritysten sisällä, mutta ei malline- tai interwikimerkinnöissä.
 
+Tee tekstimuutokset `kaarmeen-linkit` kaikkien nimiavaruuksien sivuille, jotka sisältävät ulkoisen linkin domainiin kontu.info:
+
+`python pwb.py replace -weblink:"*.kontu.info" -fix:kaarmeen-linkit`
+
 Eräitä `replace`-skriptin parametreja:
 - `-file`           Work on all pages given in a local text file. Will read any [[wiki link]] and use these articles. Argument can also be given as "-file:filename".
 - `-page`           Only edit a specific page. Argument can also be given as "-page:pagetitle". You can give this parameter multiple times to edit multiple pages.

@@ -10,17 +10,22 @@ class Family(family.Family):
         self.name = 'kontu'
         self.langs = {
             'fi': 'kontu.wiki',
-            # List of valid language codes needed for 
-            # -exceptinsidetag:interwiki to work
-            'de': None,
-            'en': None,
-            'fa': None,
-            'fr': None
+            # A list of valid language codes is needed for the 
+            # -exceptinsidetag:interwiki parameter of the replace script to 
+            # work. The category script does not allow the values to be empty.
+            'de': 'localhost',
+            'en': 'localhost',
+            'fa': 'localhost',
+            'fr': 'localhost'
         }
 
     def scriptpath(self, code):
         return {
             'fi': '/w',
+            'de': '/dummy',
+            'en': '/dummy',
+            'fa': '/dummy',
+            'fr': '/dummy'
         }[code]
 
     @deprecated('APISite.version()')
