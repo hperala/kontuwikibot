@@ -21,7 +21,7 @@ fixes['kaarmeen-linkit'] = {
         '_default': u'Muutettu ulkoisessa linkissä kontu.info/keskustelut → kontu.me/keskustelut'
     },
     'replacements': [
-        (ur'kontu\.info/keskustelut', 
-         u'kontu.me/keskustelut')
+        (ur'//kontu\.info/keskustelut', 
+         u'//kontu.me/keskustelut')
     ]
 }
